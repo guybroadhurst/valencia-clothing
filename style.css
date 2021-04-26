@@ -1,0 +1,435 @@
+@font-face {
+  font-family: 'HK Grotesk';
+  src: url('hkgrotesk-bold-webfont.woff2') format('woff2'),
+    url('hkgrotesk-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HK Grotesk';
+  src: url('hkgrotesk-semibold-webfont.woff2') format('woff2'),
+    url('hkgrotesk-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #ECC7AB;
+  font-family: 'HK Grotesk';
+  font-size: 32px;
+  line-height: 1.25;
+  color: #fff;
+}
+
+/* header and menu toggle */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 60px 20px;
+  margin-bottom: 50px;
+}
+
+header .logo {
+  position: relative;
+  left: 45px;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-content: center;
+}
+
+header a img {
+  margin-right: 5px;
+}
+
+header img.logo {
+  transform: rotate(-5deg);
+}
+
+.menu-toggle {
+  position: fixed;
+  top: 45px;
+  right: 45px;
+  z-index: 3;
+}
+
+.menu-toggle .close-icon {
+  display: none;
+}
+
+.menu-toggle.open .menu-icon {
+  display: none;
+}
+
+.menu-toggle.open .close-icon {
+  display: inline;
+}
+
+/* slide out menu */
+
+.menu {
+  background-color: #FFD363;
+  color: #fff;
+  width: 700px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform 0.5s ease;
+  z-index: 2;
+}
+
+.menu.open {
+  transform: translateX(0);
+}
+
+.menu .pages {
+  right: 45px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu .pages a {
+  color: #fff;
+  font-size: 120px;
+  display: block;
+  line-height: 1;
+  text-align: right;
+  text-decoration: none;
+}
+
+.menu .pages a:hover {
+  color: #738DA0;
+}
+
+.menu .socials {
+  position: absolute;
+  right: 45px;
+  bottom: 45px;
+}
+
+.menu .socials a {
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.menu .socials a:hover {
+  color: #738DA0;
+}
+
+.menu p {
+  position: absolute;
+  bottom: 15.5px;
+  right: 45px;
+  font-size: 14px;
+}
+
+.menu p a {
+  color: #fff;
+}
+
+.menu p a:hover {
+  color: #738DA0;
+}
+
+/* all sections */
+.circle,
+.square {
+  height: 100px;
+  position: absolute;
+  width: 100px;
+}
+
+.circle {
+  background-color: #ffd363;
+  border-radius: 50%;
+}
+
+.square {
+  background-color: #738da0;
+}
+
+section {
+  max-width: 960px;
+  position: relative;
+  padding: 20px;
+  margin: 0 auto 150px auto;
+}
+
+section img.image {
+  max-width: 480px;
+  height: 650px;
+}
+
+.copy {
+  max-width: 640px;
+  position: absolute;
+  top: 50%;
+ 	transform: translateY(-50%);
+}
+
+h2 {
+  font-size: 96px;
+  font-weight: 500;
+  line-height: 0.9;
+}
+
+h3 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+section a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Natural Section */
+.natural .copy {
+  right: 20px;
+}
+
+.natural .circle {
+  top: -20px;
+  left: -30px;
+  transition: all 1s ease;
+}
+
+.natural .square {
+  right: 50%;
+  bottom: 80px;
+  transition: all 1s ease;
+}
+
+.natural h2, .natural img {
+  transition: transform 1s ease;
+}
+
+.natural:hover h2 {
+  transform: scale(1.1);
+}
+
+.natural:hover img {
+  transform: rotate(-5deg);
+}
+
+.natural:hover .circle {
+  top: 50px;
+  left: -100px;
+}
+
+.natural:hover .square {
+  right: 240px;
+  bottom: 60px;
+}
+
+/* One Thing Section */
+.onething {
+	padding-left: 360px; 
+}
+
+.onething .copy {
+  left: 20px;
+  transition: transform 1s ease;
+}
+
+.onething h3 {
+  font-size: 84px;
+  transition: transform 1s ease;
+}
+
+.onething p {
+  transition: transform 1s ease;
+}
+
+.onething .circle {
+  right: 20px;
+  bottom: 30px;
+  transition: all 1s ease;
+}
+
+.onething .square {
+  left: 280px;
+  top: 10px;
+  transition: all 1s ease;
+}
+
+.onething img {
+  transition: transform 1s ease;
+}
+
+.onething:hover .copy {
+  transform: rotate(-2deg);
+}
+
+.onething:hover img {
+  transform: scale(1.1);
+}
+
+.onething:hover .circle {
+  right: 120px;
+  bottom: 480px;
+}
+
+.onething:hover .square {
+  left: 320px;
+  top: 200px;
+}
+
+/* Lookbooks Section */
+.lookbooks {
+  background-image: url("hp-mike-von-trddmgdfjqy-unsplash.jpg");
+  padding: 220px 20px 180px 20px;  
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  max-width: 100%;
+}
+
+.lookbooks h3 {
+  font-size: 86px;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+
+.lookbooks img {
+  margin-bottom: 20px;
+  width: 75px;
+  transition: transform 0.5s ease;
+}
+
+.lookbooks:hover h3 {
+  transform: scale(1.1);
+}
+
+.lookbooks:hover img {
+  transform: scale(1.1);
+}
+
+/* Collection Section */
+
+.collection .copy {
+  left: 240px;
+  max-width: 800px;
+  transform: translateY(80px);
+  text-align: center;
+}
+
+.collection .circle {
+  right: 150px;
+  top: -30px;
+  transition: all 1s ease;
+}
+
+.collection .square {
+  left: 0;
+  top: 250px;
+  transition: all 1s ease;
+}
+
+.collection img {
+  transition: transform 1s ease;
+}
+
+.collection:hover img {
+  transform: rotate(-3deg);
+}
+
+.collection:hover .circle {
+  right: 200px;
+  top: 100px;
+}
+
+.collection:hover .square {
+  left: 35px;
+  top: 200px;
+}
+
+/* Footer */
+
+footer {
+  background-image: url("footer.svg");
+  background-position: top;
+  background-size: cover;
+  height: 260px;
+  padding: 200px 0;
+  text-align: center;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 40px 40px 40px;
+  width: 100%;
+}
+
+footer nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+  padding-right: 15px;
+}
+
+footer nav a:hover {
+  color: #738DA0;
+}
+
+/* Media Queries */
+/* max 800px */
+
+@media (max-width:800px) {
+  header {
+    margin: 0;
+    padding: 30px 40px;
+  }
+  
+  header .logo {
+    height: 30px;
+  }
+  
+  .menu-toggle {
+    padding-right: 10px;
+    top: 30px;
+    right: 40px;
+  }
+  
+  .menu {
+    width: 100%;
+  }
+  
+  .menu .pages a {
+    font-size: 80px;
+  }
+  
+  .circle,
+  .square {
+    width: 50px;
+    height: 50px;
+    transform: none;
+  }
+  
+  section {
+    max-width: 700px;
+    padding: 40px 60px;
+  }
+  
+  .copy {
+    position: relative;
+    left: 0;
+    right: 0;
+ 		transform: none;
+  }
+}
