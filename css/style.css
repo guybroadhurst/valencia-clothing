@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'HK Grotesk';
-  src: url('hkgrotesk-bold-webfont.woff2') format('woff2'),
-    url('hkgrotesk-bold-webfont.woff') format('woff');
+  src: url('../fonts/hkgrotesk-bold-webfont.woff2') format('woff2'),
+    url('../fonts/hkgrotesk-bold-webfont.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'HK Grotesk';
-  src: url('hkgrotesk-semibold-webfont.woff2') format('woff2'),
-    url('hkgrotesk-semibold-webfont.woff') format('woff');
+  src: url('../fonts/hkgrotesk-semibold-webfont.woff2') format('woff2'),
+    url('../fonts/hkgrotesk-semibold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -288,7 +288,7 @@ section a {
 
 /* Lookbooks Section */
 .lookbooks {
-  background-image: url("hp-mike-von-trddmgdfjqy-unsplash.jpg");
+  background-image: url("../img/hp-mike-von-trddmgdfjqy-unsplash.jpg");
   padding: 220px 20px 180px 20px;  
   background-position: center;
   background-size: cover;
@@ -358,7 +358,7 @@ section a {
 /* Footer */
 
 footer {
-  background-image: url("footer.svg");
+  background-image: url("../img/footer.svg");
   background-position: top;
   background-size: cover;
   height: 260px;
